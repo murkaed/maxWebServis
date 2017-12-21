@@ -34,6 +34,8 @@ public class HelloWebServiceClient {
         HelloWebService hello = service.getPort(HelloWebService.class);
 
         // Ура! Теперь можно вызывать удаленный метод
-        System.out.println(hello.getHelloString(new Date().toString()));
+        System.out.println(hello.getHelloString("max"));
+        System.out.println(hello.getData().toString());
+
     }
 }

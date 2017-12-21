@@ -2,6 +2,7 @@ package ru.javarush.ws;
 
 // таже аннотация, что и при описании интерфейса,
 import javax.jws.WebService;
+import java.util.Date;
 
 // но здесь используется с параметром endpointInterface,
 // указывающим полное имя класса интерфейса нашего веб-сервиса
@@ -12,4 +13,10 @@ public class HelloWebServiceImpl implements HelloWebService {
         // просто возвращаем приветствие
         return "Hello, " + name + "!";
     }
+    public Date getData() {
+        return new Date();
+        // просто возвращаем приветствие
+
+    }
+
 }
